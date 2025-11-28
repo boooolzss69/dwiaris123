@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Absensi Klien - Psikoris</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Absensi Klien - Biro Psikologi Psikoris</h1>
+    </header>
+
+    <main>
+        <!-- Form Tambah Klien -->
+        <section class="card">
+            <h2>Tambah Klien</h2>
+            <input id="clientName" type="text" placeholder="Nama klien">
+            <button onclick="addClient()">Tambah</button>
+        </section>
+
+        <!-- Tabel Absensi -->
+        <section class="card">
+            <h2>Daftar Klien</h2>
+            <table id="clientTable">
+                <thead>
+                    <tr>
+                        <th>Nama</th>
+                        <th>Tanggal Absen</th>
+                        <th>Aksi</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </section>
+
+        <button class="export-btn" onclick="exportCSV()">Export CSV</button>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
